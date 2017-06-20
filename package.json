@@ -1,0 +1,17 @@
+{
+  "name": "metalsmith-shortcode-parser",
+  "version": "1.0.0",
+  "description": "Metalsmith wrapper for shortcode-parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clyde Smets",
+  "license": "MIT",
+  "dependencies": {
+    "shortcode-parser": "0.0.1"
+  },
+  "devDependencies": {
+    "metalsmith": "^2.3.0"
+  }
+}

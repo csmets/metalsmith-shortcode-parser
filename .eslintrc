@@ -1,0 +1,7 @@
+{
+	"extends": "airbnb",
+	"rules": {
+		"indent": ["error", 4],
+        "no-underscore-dangle": [2, {"allow": ["_directory"] }],
+	},
+}
