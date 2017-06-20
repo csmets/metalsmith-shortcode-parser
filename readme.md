@@ -1,4 +1,5 @@
 # Metalsmith Shortcode Parser
+[![Build Status](https://travis-ci.org/csmets/metalsmith-shortcode-parser.svg?branch=master)](https://travis-ci.org/csmets/metalsmith-shortcode-parser)
 
 Metalsmith wrapper for [shortcode-parser](https://www.npmjs.com/package/shortcode-parser)
 
