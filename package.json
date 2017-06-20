@@ -4,7 +4,7 @@
   "description": "Metalsmith wrapper for shortcode-parser",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/mocha/bin/mocha"
   },
   "author": "Clyde Smets",
   "license": "MIT",
@@ -12,6 +12,8 @@
     "shortcode-parser": "0.0.1"
   },
   "devDependencies": {
-    "metalsmith": "^2.3.0"
+    "assert-dir-equal": "^1.0.1",
+    "metalsmith": "^2.3.0",
+    "mocha": "^3.4.2"
   }
 }
