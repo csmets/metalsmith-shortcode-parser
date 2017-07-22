@@ -6,6 +6,12 @@ Metalsmith wrapper for [shortcode-parser](https://www.npmjs.com/package/shortcod
 Since the other shortcodes for metalsmith no longer work or are for jade/pug
 templating only, I've had to create this.
 
+### Usage
+
+```
+npm install metalsmith-shortcode-parser
+```
+
 ```javascript
 const shortcodes = require('metalsmith-shortcode-parser');
 

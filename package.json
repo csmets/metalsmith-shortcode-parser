@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-shortcode-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Metalsmith wrapper for shortcode-parser",
   "main": "index.js",
   "scripts": {
