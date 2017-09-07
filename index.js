@@ -9,6 +9,7 @@
  */
 
 const parser = require('shortcode-parser');
+const path = require('path');
 
 const wrapper = opts =>
     (files, metalsmith, done) => {
@@ -25,8 +26,11 @@ const wrapper = opts =>
         }
 
         Object.keys(files).forEach((file) => {
-            const out = parser.parse(files[file].contents.toString('utf8'));
-            files[file].contents = Buffer.from(out, 'utf8');
+            let ext = path.extname(file);
+            if(!shortcodeOpts.files || (shortcodeOpts.files && shortcodeOpts.files.indexOf(ext) != -1)) {
+                const out = parser.parse(files[file].contents.toString('utf8'));
+                files[file].contents = Buffer.from(out, 'utf8');
+            }
         });
     };
 

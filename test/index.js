@@ -6,7 +6,7 @@ const equal = require('assert-dir-equal');
 describe("Metalsmith shortcode parser", () => {
 
 	const testFixture = (fix, opts, done) => {
-		
+
 		Metalsmith(__dirname + '/fixtures/' + fix)
 			.source('src')
 			.destination('build')
@@ -74,6 +74,21 @@ describe("Metalsmith shortcode parser", () => {
 					},
 					image: function (buf, opts) {
 						return '<img src="this/is/a/test.png">';
+					},
+				},
+			},
+			done
+		);
+	});
+
+	it('Should parse only specified file types', (done) => {
+		testFixture(
+			'files',
+			{
+				files: ['.md'],
+				shortcodes: {
+					message: function (buf, opts) {
+						return '<div class="message"></div>';
 					},
 				},
 			},
