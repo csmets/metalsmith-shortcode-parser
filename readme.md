@@ -17,6 +17,7 @@ const shortcodes = require('metalsmith-shortcode-parser');
 
 Metalsmith(__dirname)
     .use(shortcodes({
+        files: ['.html', '.md'],
         shortcodes: {
             bold: function (buf, opts) {
                 if (opts.upper) buf = buf.toUpperCase();
